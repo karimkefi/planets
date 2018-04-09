@@ -8,32 +8,54 @@
 <body>
     <svg class="deepSpace" width="600" height="600">
 
-        <rect width="600" height="600" fill="black"/>
-        <circle cx="300" cy="300" r="30" stroke="white" stroke-width="1" fill="yellow" />
+        <defs>
+            <radialGradient id="gradSun" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:    rgb(255,231,0);     stop-opacity:1" />
+                <stop offset="100%" style="stop-color:  rgb(227,75,16);   stop-opacity:1" />
+            </radialGradient>
+
+            <linearGradient id="gradJupiter" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:rgb(203,201,192);stop-opacity:1" />
+                <stop offset="50%" style="stop-color:rgb(255,93,43);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(203,201,192);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+
+
+        <rect width="800" height="600" fill="black"/>
+
+        <!--Sun-->
+        <circle cx="300" cy="300" r="30" fill="url(#gradSun)"/>
+
 
         <!--rotation around sun-->
 
-        <circle cx="300" cy="300" r="60" stroke="white" stroke-width="1" fill="none" />
+        <circle cx="300" cy="300" r="50" stroke="white" stroke-width="1" fill="none" />
         <circle cx="300" cy="300" r="80" stroke="white" stroke-width="1" fill="none" />
+
         <circle cx="300" cy="300" r="100" stroke="white" stroke-width="1" fill="none"/>
-        <circle cx="300" cy="300" r="120" stroke="white" stroke-width="1" fill="none"/>
+
+        <circle cx="300" cy="300" r="130" stroke="white" stroke-width="1" fill="none"/>
         <circle cx="300" cy="300" r="160" stroke="white" stroke-width="1" fill="none"/>
         <circle cx="300" cy="300" r="200" stroke="white" stroke-width="1" fill="none"/>
-        <circle cx="300" cy="300" r="240" stroke="white" stroke-width="1" fill="none"/>
-        <circle cx="300" cy="300" r="250" stroke="white" stroke-width="1" fill="none"/>
+        <circle cx="300" cy="300" r="235" stroke="white" stroke-width="1" fill="none"/>
+        <circle cx="300" cy="300" r="245" stroke="white" stroke-width="1" fill="none"/>
         <circle cx="300" cy="300" r="280" stroke="white" stroke-width="1" fill="none"/>
 
 
         <!--planets-->
-        <circle class="mercury"     cx="300"    cy="240"   r="7" />
-        <circle class="venus"       cx="300"    cy="220"   r="8" />
-        <circle class="earth"       cx="300"    cy="200"   r="5" />
-        <circle class="mars"        cx="300"    cy="180"   r="8" />
-        <circle class="jupiter"     cx="300"    cy="140"   r="15" />
-        <circle class="saturn"      cx="300"    cy="100"   r="10" />
-        <circle class="uranus"      cx="300"    cy="60"    r="4" />
-        <circle class="neptune"     cx="300"    cy="50"    r="6" />
-        <circle class="pluto"       cx="300"    cy="20"    r="6" />
+        <circle class="mercury"     cx="300"    cy="300"    r="7" />
+        <circle class="venus"       cx="300"    cy="300"    r="9" />
+
+        <circle class="earth"       cx="300"    cy="300"    r="7" />
+        <circle class="moon"        cx="300"    cy="300"    r="3" />
+
+        <circle class="mars"        cx="300"    cy="300"    r="8" />
+        <circle class="jupiter"     cx="300"    cy="300"    r="15"   fill="url(#gradJupiter)"/>
+        <circle class="saturn"      cx="300"    cy="300"    r="10" />
+        <circle class="uranus"      cx="300"    cy="300"    r="4" />
+        <circle class="neptune"     cx="300"    cy="300"    r="6" />
+        <circle class="pluto"       cx="300"    cy="300"    r="6" />
 
     </svg>
 </body>

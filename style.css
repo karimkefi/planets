@@ -1,54 +1,135 @@
 
-
-
-/*1 mercury*/
-/*2 venus*/
-/*3 earth*/
-/*4 mars*/
-/*5 jupiter*/
-/*6 saturn*/
-/*7 uranus*/
-/*8 neptune*/
+.sun {
+    background: url("http://gph.is/2pMX0rF");
+}
 
 .mercury {
     fill: #3c3e47;
+    animation-name: moveAnimationMercury ;
+    animation-duration: 8.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-
 
 .venus {
     fill: #bd7e34;
+    animation-name: moveAnimationVenus ;
+    animation-duration: 22.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-
 
 .earth {
     fill: #2242aa;
+    animation-name: moveAnimationEarth ;
+    animation-duration: 36.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-
+.moon {
+    fill: #ebe8dc;
+    animation-name: moveAnimationMoon ;
+    animation-duration: 36.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
 .mars {
     fill: #ca3023;
+    animation-name: moveAnimationMars ;
+    animation-duration: 32.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-
 
 .jupiter {
-    fill: #ac9571;
+    /*fill: #ac9571;*/
+    animation-name: moveAnimationJupiter ;
+    animation-duration: 43.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-
 
 .saturn {
     fill: #aa9949;
+    animation-name: moveAnimationSaturn ;
+    animation-duration: 10.76s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-
 
 .uranus {
     fill: #53d89b;
+    animation-name: moveAnimationUranus ;
+    animation-duration: 30.68s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .neptune {
     fill: #3bb3d6;
+    animation-name: moveAnimationNeptune ;
+    animation-duration: 16.48s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .pluto {
     fill: #aa6c94;
+    animation-name: moveAnimationPluto ;
+    animation-duration: 36.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes moveAnimationMercury {
+    0%      {transform:rotate(0deg)     translate(0px, -50px) rotate(0deg) ;}
+    100% 	{transform:rotate(360deg)   translate(0px, -50px) rotate(-360deg);}
+}
+
+@keyframes moveAnimationVenus {
+    0%      {transform:rotate(0deg)     translate(0px, -80px) rotate(0deg) ;}
+    100% 	{transform:rotate(360deg)   translate(0px, -80px) rotate(-360deg);}
+}
+
+@keyframes moveAnimationEarth {
+    0%      {transform:rotate(0deg)     translate(0px, -100px) rotate(0deg) ;}
+    100% 	{transform:rotate(360deg)   translate(0px, -100px) rotate(-360deg);}
+}
+
+@keyframes moveAnimationMoon {
+    0%      {transform:rotate(0deg)     translate(0px, -115px) rotate(360deg) ;}
+    100% 	{transform:rotate(360deg)   translate(0px, -115px) rotate(0deg) ;}
+}
+
+@keyframes moveAnimationMars {
+    0%      {transform:rotate(0deg)     translate(0px, -130px) rotate(0deg) ;}
+    100% 	{transform:rotate(360deg)   translate(0px, -130px) rotate(-360deg);}
+}
+
+@keyframes moveAnimationJupiter {
+    0%      {transform:rotate(0deg)     translate(0px, -160px) rotate(0deg) ;}
+    100% 	{transform:rotate(360deg)   translate(0px, -160px) rotate(-360deg);}
+}
+
+@keyframes moveAnimationSaturn {
+    0%      {transform:rotate(0deg)     translate(0px, -200px) rotate(0deg) ;}
+    100% 	{transform:rotate(360deg)   translate(0px, -200px) rotate(-360deg);}
+}
+
+@keyframes moveAnimationUranus {
+    0%      {transform:rotate(0deg)     translate(0px, -235px) rotate(0deg) ;}
+    100% 	{transform:rotate(360deg)   translate(0px, -235px) rotate(-360deg);}
+}
+
+@keyframes moveAnimationNeptune {
+    0%      {transform:rotate(0deg)     translate(0px, -245px) rotate(0deg) ;}
+    100% 	{transform:rotate(360deg)   translate(0px, -245px) rotate(-360deg);}
+}
+
+@keyframes moveAnimationPluto {
+    0%      {transform:rotate(0deg)     translate(0px, -280px) rotate(0deg) ;}
+    100% 	{transform:rotate(360deg)   translate(0px, -280px) rotate(-360deg);}
 }
